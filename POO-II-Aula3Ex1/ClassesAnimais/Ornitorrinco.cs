@@ -1,12 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using POO_II_Aula3Ex1.ClassesBase;
 
 namespace POO_II_Aula3Ex1.ClassesAnimais
 {
-    internal class Ornitorrinco
+    internal class Ornitorrinco : Mamifero, IAquatico, IOviparo
     {
+        public Ornitorrinco(int qtdeDeMamas, bool pelos, string corDoPelo, string nome, DateTime dataDeNascimento, char sexo, bool carnivoro, bool peconhento) :
+            base(qtdeDeMamas, pelos, corDoPelo, nome, dataDeNascimento, sexo, carnivoro, peconhento)
+        {
+        }
+
+        public bool ViveEmTerra { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public bool Mergullho { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public bool AguaDoce { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        public void Botar()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Chocar()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

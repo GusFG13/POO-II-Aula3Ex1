@@ -18,9 +18,9 @@ namespace POO_II_Aula3Ex1
             Leao leoa = new Leao(6, true, "Castanho", "Leão", new DateTime(2019, 09, 16), 'f', true, false);
 
             Console.WriteLine("Animal: " + leoa.Nome);
-            leao.Amamentar();
-            leao.Comunicar();
-            leao.Movimentar();
+            leoa.Amamentar();
+            leoa.Comunicar();
+            leoa.Movimentar();
             Console.WriteLine("Idade: " + leoa.Idade);
         }
     }
